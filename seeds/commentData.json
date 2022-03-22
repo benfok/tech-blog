@@ -1,0 +1,72 @@
+[
+    {
+        "comment": "It can end up creating a bunch of unnecessary layers for me. I prefer when the code is all in one place so I can better picture what is happening rather than having to route through multiple connected files.",
+        "post_id": 1,
+        "user_id": 1
+    },
+    {
+        "comment": "Not sure I agree. I’d rather debug through multiple small files than one large one. Makes a project more scalable in the long run.",
+        "post_id": 1,
+        "user_id": 3
+    },
+    {
+        "comment": "I think it totally depends on your experience. Sequelize is perhaps easier for someone with no SQL knowledge to grasp and connect to a JS syntax. For very complex queries I can see where sequelize with little SQL knowledge could be frustrating, and where someone with more SQL experience would rather just skip it altogether. I suppose that is where sequelize.literal is useful. ",
+        "post_id": 2,
+        "user_id": 3
+    },
+    {
+        "comment": "Do you like microwave meals or to cook from scratch?",
+        "post_id": 2,
+        "user_id": 5
+    },
+    {
+        "comment": "You see that is where I take issue. A microwave meal is just plug and play, where as sequelize still requires you to wrap you head around a syntax and pore through documentation to add code to multiple files when I could achieve the same outcome with a single statement.",
+        "post_id": 2,
+        "user_id": 4
+    },
+    {
+        "comment": "And microwave meals are really not healthy",
+        "post_id": 2,
+        "user_id": 4
+    },
+    {
+        "comment": "How does someone writing sequelize or SQL have time to cook?",
+        "post_id": 2,
+        "user_id": 1
+    },
+    {
+        "comment": "Using an ORM has it’s pros and cons. There are some performance sacrifices on a large scale, but it does have the benefit of keeping everything in the same language. There are certainly some limitations when it comes to more complex queries. ",
+        "post_id": 2,
+        "user_id": 2
+    },
+    {
+        "comment": "Why use multiple keystrokes when one will do? Tabs for me",
+        "post_id": 3,
+        "user_id": 4
+    },
+    {
+        "comment": "Apparently developers who use spaces earn more on average...",
+        "post_id": 3,
+        "user_id": 2
+    },
+    {
+        "comment": "I really don’t care. Just make sure you comment on your code.",
+        "post_id": 3,
+        "user_id": 3
+    },
+    {
+        "comment": "Indentation is for the weak.",
+        "post_id": 3,
+        "user_id": 5
+    },
+    {
+        "comment": "Well that was a successful discussion. Thanks everyone.",
+        "post_id": 3,
+        "user_id": 1
+    },
+    {
+        "comment": "I thought this was a tech blog? (wheels)",
+        "post_id": 4,
+        "user_id": 4
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Model, View, Controller",
+        "content": "Thoughts on MVC as a hierarchical structure for your code base? It has helped me better understand the division of responsibilities for both the function of the code as well as those working on it.",
+        "user_id": "2"
+    },
+    {
+        "title": "MySQL and Sequelize",
+        "content": "I have a SQL and database background, and have found sequelize a hard syntax to grasp. It’s not intuitive for me and I’d much prefer to just code in raw SQL without needing to learn and add a layer between my code and the data. What do others think?",
+        "user_id": "4"
+    },
+    {
+        "title": "Space cadets",
+        "content": "Tabs vs spaces for indenting? Discuss…",
+        "user_id": "1"
+    },
+    {
+        "title": "Doors and Wheels",
+        "content": "Are there more doors or wheels in the world?",
+        "user_id": "3"
+    }
+]
