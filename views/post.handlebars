@@ -1,0 +1,15 @@
+<section>
+  <article>
+    <div>
+      <h2>{{post.title}}</h2>
+      <h3>Posted by {{post.user.username}} on {{format_date post.createdAt}}</h3>
+      <p>{{post.content}}</p>
+      <div>
+          {{#each post.comments as |comment|}}
+          <p class="comment">{{comment.comment}}</p>
+          <p>By {{comment.user.username}} on {{format_date comment.createdAt}}</p>
+          {{/each}}
+      </div>
+    </div>
+  </article>
+</section>
