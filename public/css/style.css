@@ -209,6 +209,18 @@ h3 {
     max-width: 120px;
 }
 
+.btn-secondary {
+    background-color: var(--darkBlue);
+    color: var(--red);
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--red);
+    font-size: 90%;
+    text-decoration: none;
+    margin: 10px 5px 0 0;
+    max-width: 120px;
+}
+
 .btn-wide {
     max-width: 200px;
 }
@@ -218,6 +230,13 @@ h3 {
     cursor: pointer;
     background-color: var(--darkBlue);
     color: var(--red);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+    cursor: pointer;
+    background-color: var(--red);
+    color: var(--light);
 }
 
 footer {

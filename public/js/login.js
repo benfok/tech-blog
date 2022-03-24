@@ -44,7 +44,7 @@ const signup = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/api/dashboard');
+      document.location.replace('/');
     } else {
       alert('error');
     }
