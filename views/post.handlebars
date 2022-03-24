@@ -1,15 +1,30 @@
 <section>
   <article>
-    <div>
-      <h2>{{post.title}}</h2>
-      <h3>Posted by {{post.user.username}} on {{format_date post.createdAt}}</h3>
-      <p>{{post.content}}</p>
-      <div>
-          {{#each post.comments as |comment|}}
-          <p class="comment">{{comment.comment}}</p>
-          <p>By {{comment.user.username}} on {{format_date comment.createdAt}}</p>
-          {{/each}}
-      </div>
+    <div class="post-header">
+      <h2 id="post-title" data-id="{{post.id}}">{{post.title}}</h2>
+      <h3>Posted by <strong>{{post.user.username}}</strong> on <strong>{{format_date post.createdAt}}</strong></h3>
     </div>
+      <p class="post-body">{{post.content}}</p>
+    <div class="post-footer">
+    </div>
+    <p class="comment-title"><strong>{{post.comments.length}} Comments</strong></p>
+        {{#each post.comments as |comment|}}
+          <div class="comment-box">
+            <p class="comment">{{comment.comment}}</p>
+            <p class="comment-stamp">By <strong>{{comment.user.username}}</strong> on <strong>{{format_date comment.createdAt}}</strong></p>
+          </div>
+        {{/each}}
+
   </article>
 </section>
+<section class="comment-container">
+    <form class="form comment-form" id="comment-form">
+        <div class="form-field">
+          <label for="comment-box">Add a Comment...</label>
+          <textarea name="comment" id="comment-box" maxlength="250"/></textarea>
+        </div>
+        <button class="btn-primary" type="submit">Add Comment</button>
+    </form>
+</section>
+
+<script src="/js/comment.js"></script>

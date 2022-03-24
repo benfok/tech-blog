@@ -16,11 +16,13 @@ router.get('/', async (req, res) => {
         {
           model: Comment
         }
+      ],
+      order: [
+        ['created_at', 'DESC']
       ]
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
-    console.log(posts);
     res.status(200).render('homepage', {
       posts,
       // Pass the logged in flag to the template
