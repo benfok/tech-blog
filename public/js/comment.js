@@ -3,11 +3,12 @@ const comment = async (event) => {
 
     const postId = document.getElementById('post-title').dataset.id;
     const newComment = document.querySelector('.comment-field').value.trim();
+    const errorMessage = document.querySelector('.error');
 
     console.log({ postId, newComment })
 
     if(newComment.length < 2) {
-        alert('Please enter a comment before submitting');
+        errorMessage.style.display = "block";
         return;
     };
 

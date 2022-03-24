@@ -4,9 +4,10 @@ const addPost = async (event) => {
 
     const title = document.querySelector('#new-post-title').value.trim();
     const content = document.querySelector('#new-post').value.trim();
+    const errorMessage = document.querySelector('.error');
 
     if(content.length < 2 || title.length < 2) {
-        alert('Please enter a complete title and post content');
+        errorMessage.style.display = "block";
         return;
     };
 
