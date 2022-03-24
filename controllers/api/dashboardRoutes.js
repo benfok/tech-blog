@@ -7,7 +7,7 @@ router.post('/', withAuth, async (req, res) => {
         Post.create({
             title: req.body.title,
             content: req.body.content,
-            user_id: '1' //req.session.user_id;
+            user_id: req.session.user_id
         });
         res.status(200).json({ message: `New post created` });
     } catch (error) {
@@ -35,7 +35,7 @@ router.get('/', withAuth, async (req, res) => {
             ['created_at', 'DESC']
           ],
           where: {
-              user_id: '1' //req.session.user_id;
+              user_id: req.session.user_id
           }
         });
     

@@ -197,11 +197,15 @@ h3 {
     color: var(--light);
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: solid 1px var(--red);
     font-size: 90%;
     text-decoration: none;
     margin: 10px 5px 0 0;
     max-width: 120px;
+}
+
+.btn-wide {
+    max-width: 200px;
 }
 
 .btn-primary:hover,

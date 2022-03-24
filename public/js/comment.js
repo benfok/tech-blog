@@ -2,7 +2,7 @@ const comment = async (event) => {
     event.preventDefault();
 
     const postId = document.getElementById('post-title').dataset.id;
-    const newComment = document.getElementById('comment-box').value.trim();
+    const newComment = document.querySelector('.comment-field').value.trim();
 
     console.log({ postId, newComment })
 
