@@ -30,6 +30,11 @@
     </nav>
   </header>
   <main>
+    {{#if logged_in}}
+      <p class="username">
+        Logged in as <strong>{{username}}</strong>
+      </p>
+    {{/if}}
     {{{ body }}}
   </main>
   <footer>

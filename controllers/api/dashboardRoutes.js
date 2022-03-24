@@ -43,7 +43,8 @@ router.get('/', withAuth, async (req, res) => {
         res.status(200).render('dashboard', {
           posts,
           // Pass the logged in flag to the template
-          logged_in: req.session.logged_in
+          logged_in: req.session.logged_in,
+          username: req.session.username
         });
     } catch (error) {
         console.log(error);
