@@ -89,6 +89,11 @@ section {
     border-top: solid 1px var(--darkBlue);
 }
 
+.error {
+    color: red;
+    padding: 10px 0;
+}
+
 article a {
     text-decoration: none;
     color: var(--darkBlue);

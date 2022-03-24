@@ -5,6 +5,7 @@ const login = async (event) => {
   // Gather the data from the form elements on the page
   const username = document.querySelector('#username-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
+  const errorMessage = document.querySelector('.error');
 
   if (username && password) {
     // Send the e-mail and password to the server
@@ -17,7 +18,8 @@ const login = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Incorrect username or password, please try again');
+      errorMessage.style.display = "block";
+      console.dir(errorMessage);
     }
   }
 };
