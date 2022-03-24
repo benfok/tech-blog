@@ -19,7 +19,6 @@ const login = async (event) => {
       document.location.replace('/');
     } else {
       errorMessage.style.display = "block";
-      console.dir(errorMessage);
     }
   }
 };
