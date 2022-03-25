@@ -95,7 +95,8 @@ section {
     border-top: solid 1px var(--darkBlue);
 }
 
-.error {
+.error,
+.auth {
     color: red;
     padding: 10px 0;
 }

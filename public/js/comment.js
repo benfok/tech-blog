@@ -4,8 +4,7 @@ const comment = async (event) => {
     const postId = document.getElementById('post-title').dataset.id;
     const newComment = document.querySelector('.comment-field').value.trim();
     const errorMessage = document.querySelector('.error');
-
-    console.log({ postId, newComment })
+    const authMessage = document.querySelector('.auth');
 
     if(newComment.length < 2) {
         errorMessage.style.display = "block";
@@ -18,11 +17,16 @@ const comment = async (event) => {
         headers: { 'Content-Type': 'application/json' }
     });
 
+    console.log(response);
+
     if (response.ok) {
         document.location.reload();
-      } else {
-        alert('Please try resubmitting your comment');
-      }
+      } else if 
+        (response.status == 403) {
+          authMessage.style.display = "block";
+        } else {
+            alert('Please try resubmitting your comment');
+        }
 }
 
 document.getElementById('comment-form').addEventListener('submit', comment);
