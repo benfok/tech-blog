@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// retrieve data including comments for a single post
 router.get('/:id', async (req, res) => {
     try { 
         const postData = await Post.findByPk(req.params.id, {
@@ -35,8 +36,5 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ message: `${error}` });
     };
 });
-
-
-
 
 module.exports = router;

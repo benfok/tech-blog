@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Prevent non logged in users from viewing the homepage
+// Render the home feed page for all users whether logged in or not
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
