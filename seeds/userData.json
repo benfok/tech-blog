@@ -1,25 +1,30 @@
 [
   {
+    "id": "1",
     "username": "htanimal",
     "email": "htanimal@hotmail.com",
     "password": "password12345"
   },
   {
+    "id": "2",
     "username": "nodemonster",
     "email": "nodemonster@gmail.com",
     "password": "password12345"
   },
   {
+    "id": "3",
     "username": "javascrumpt",
     "email": "javascrumpt86@aol.com",
     "password": "password12345"
   },
   {
+    "id": "4",
     "username": "empirestrikesback",
     "email": "ewok@aol.com",
     "password": "password12345"
   },
   {
+    "id": "5",
     "username": "obnoxiousgit",
     "email": "gitjack123@msn.com",
     "password": "password12345"
