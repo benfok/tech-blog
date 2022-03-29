@@ -34,10 +34,8 @@ const updatePost = async (event) => {
     event.preventDefault();
 
     const postId = event.target.dataset.id;
-    const content = event.target.parentNode.children[0].textContent;
-
-    // content.contentEditable = true;
-        
+    const content = document.getElementById(postId).textContent;
+   
     const response = await fetch(`/api/dashboard/${postId}`, {
          method: 'PUT',
          body: JSON.stringify({ content }),

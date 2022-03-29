@@ -33,7 +33,7 @@
                     Posted by <strong>{{post.user.username}}</strong> on <strong>{{format_date post.createdAt}}</strong>
                 </h3>
             </div>
-            <p class="post-body" contenteditable="true" data-id="{{post.id}}">
+            <p id="{{post.id}}" class="post-body" contenteditable="true" data-id="{{post.id}}">
                 {{post.content}}
             </p>
             <div class="post-footer">
