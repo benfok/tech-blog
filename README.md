@@ -84,7 +84,8 @@ The deployed application on [Heroku](https://tech-blog-tl.herokuapp.com/)
 - This application uses the hierarchical structure of MVC - Model, View Controller - in order to separate concerns and functionality
 - This structure and the use of handlebars.js for templating and rendering dynamic HTML meant a clean and structured code base with great scalability
 - The Dashboard shows your own posts, but there is no further profile information or functionality or the ability for users to connect outside of posts
-- Some additions that were out of scope but I considered were:
+- Some additions that were out of scope for the user story but I considered were:
+  - Rendering a 404 page for invalid URLs
   - Improving routing post login. For example, you are unable to comment if you are not logged in, but upon logging in you are not taken back to the post you were viewing
   - Adding an 'edited' flag if a user modifies a post once it has been posted
   - Keyword search functionality
