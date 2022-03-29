@@ -50,9 +50,9 @@ There are currently no tests written for this application.
 - JavaScript
 - MySQL
 - Handlebars.js
-- Node.js
 - Sequelize.js
-- Dependencies
+- Node.js
+- Dependencies:
   - [express](https://www.npmjs.com/package/express) as a web framework for Node.js.
   - [express-session](https://www.npmjs.com/package/express-session) middleware to create a session variable for persistent logged in status handling
   - [express-handlebars](https://www.npmjs.com/package/express-handlebars) a handlebars view engine for express
@@ -73,6 +73,7 @@ Here is a screenshot of the home page and the dashboard page of the application.
 Please reach out with any questions regarding the application.
 
 The repository in [GitHub](https://github.com/benfok/tech-blog)
+
 The deployed application on [Heroku](https://tech-blog-tl.herokuapp.com/)
 
 ## Details and Learnings
