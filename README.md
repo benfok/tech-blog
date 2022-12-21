@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This app is a CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other developers’ posts as well. It allows guerst users to view posts, but requires sign-up or login in order to create posts or add comments. Once logged in, users can view their dashboard to see and edit their own posts. Users are automatically logged out after 1 minute of inactivity. This app is written in JavaScript, uses Handlebars.js to render dynamic HTML to a page layout and creates, reads, updates and deletes data within a MySQL database. The app is deployed using Node.js on Heroku. 
+This app is a CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other developers’ posts as well. It allows guerst users to view posts, but requires sign-up or login in order to create posts or add comments. Once logged in, users can view their dashboard to see and edit their own posts. Users are automatically logged out after 1 minute of inactivity. This app is written in JavaScript, uses Handlebars.js to render dynamic HTML to a page layout and creates, reads, updates and deletes data within a MySQL database. The app is deployed using Node.js on Cyclic. 
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
@@ -74,7 +74,7 @@ Please reach out with any questions regarding the application.
 
 The repository in [GitHub](https://github.com/benfok/tech-blog)
 
-The deployed application on [Heroku](https://tech-blog-tl.herokuapp.com/)
+The deployed application on [Cyclic](https://tech-blog.cyclic.app/)
 
 ## Details and Learnings
 - The application is responsive to different screen widths
