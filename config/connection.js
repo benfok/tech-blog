@@ -20,7 +20,7 @@ if (process.env.JAWSDB_URL) {
 }
 
 if (process.env.CYCLIC_DB) {
-  console.log(CYCLIC_DB);
+  console.log(process.env.CYCLIC_DB);
   sequelize = new Sequelize(process.env.CYCLIC_DB);
 } else {
   sequelize = new Sequelize(
