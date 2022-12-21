@@ -81,7 +81,7 @@ The deployed application on [Heroku](https://tech-blog-tl.herokuapp.com/)
 - When the user is logged in, a logged-in flag appears below the header displaying the username
 - Validation exists on all entry fields including email, password and when creating a post
 - Comments cannot be added unless a user is logged in. I handled error messages between a mix of browser form functionality and error messages rendering directly to the page. I wanted to avoid using alerts.
-- This application uses the hierarchical structure of MVC - Model, View Controller - in order to separate concerns and functionality
+- This application uses the architectural structure of MVC - Model, View Controller - in order to separate concerns and functionality
 - This structure and the use of handlebars.js for templating and rendering dynamic HTML meant a clean and structured code base with great scalability
 - The Dashboard shows your own posts, but there is no further profile information or functionality or the ability for users to connect outside of posts
 - Some additions that were out of scope for the user story but I considered were:
